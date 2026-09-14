@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GCTU Hostel Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>GCTU Hostel Finder</h1>
+  <p>Hostels around Tesano, Abeka, Abelemkpe</p>
+  <div class="search-box">
+    <select id="areaFilter">
+      <option value="all">All Areas</option>
+      <option value="Tesano">Tesano</option>
+      <option value="Abeka">Abeka</option>
+      <option value="Abelemkpe">Abelemkpe</option>
+      <option value="Achimota">Achimota</option>
+    </select>
+    <input type="number" id="priceFilter" placeholder="Max Price">
+    <button onclick="filterHostels()">Search</button>
+  </div>
+  <div id="hostelList" class="hostel-grid"></div>
+  <script src="app.js"></script>
+</body>
+</html>
