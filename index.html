@@ -1,24 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find student hostels around GCTU, Tesano, Abeka, Abelemkpe and Achimota.">
   <title>GCTU Hostel Finder</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>GCTU Hostel Finder</h1>
-  <p>Hostels around Tesano, Abeka, Abelemkpe</p>
-  <div class="search-box">
-    <select id="areaFilter">
-      <option value="all">All Areas</option>
-      <option value="Tesano">Tesano</option>
-      <option value="Abeka">Abeka</option>
-      <option value="Abelemkpe">Abelemkpe</option>
-      <option value="Achimota">Achimota</option>
-    </select>
-    <input type="number" id="priceFilter" placeholder="Max Price">
-    <button onclick="filterHostels()">Search</button>
-  </div>
-  <div id="hostelList" class="hostel-grid"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span>🏠</span>
+      <div>
+        <strong>GCTU Hostel Finder</strong>
+        <small>Find your next home</small>
+      </div>
+    </div>
+
+    <button class="saved-btn" onclick="showSaved()">
+       Saved <span id="savedCount">0</span>
+    </button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">GCTU STUDENT HOUSING</p>
+
+      <h1>Find a hostel that<br><span>feels like home.</span></h1>
+
+      <p class="hero-text">
+        Discover student-friendly hostels around GCTU,
+        compare prices and find a location that works for you.
+      </p>
+
+      <div class="search-box">
+
+        <div class="field">
+          <label>Area</label>
+          <select id="areaFilter">
+            <option value="all">All Areas</option>
+            <option value="Tesano">Tesano</option>
+            <option value="Abeka">Abeka</option>
+            <option value="Abelemkpe">Abelemkpe</option>
+            <option value="Achimota">Achimota</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Maximum price</label>
+          <input
+            type="number"
+            id="priceFilter"
+            placeholder="e.g. 3000"
+          >
+        </div>
+
+        <button class="search-btn" onclick="filterHostels()">
+          🔎 Search
+        </button>
+
+        <button class="clear-btn" onclick="clearFilters()">
+          Clear
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="section-header">
+      <div>
+        <p class="eyebrow">EXPLORE</p>
+        <h2>Available Hostels</h2>
+      </div>
+
+      <span id="resultCount" class="result-count"></span>
+    </section>
+
+
+    <!-- HOSTEL LIST -->
+    <section id="hostelList" class="hostel-grid"></section>
+
+
+    <!-- SAVED HOSTELS -->
+    <section id="savedSection" class="saved-section hidden">
+
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">YOUR LIST</p>
+          <h2>Saved Hostels</h2>
+        </div>
+
+        <button onclick="hideSaved()" class="back-btn">
+          ← Back to hostels
+        </button>
+      </div>
+
+      <div id="savedList" class="hostel-grid"></div>
+
+    </section>
+
+
+    <!-- ADD HOSTEL -->
+    <section class="add-section">
+
+      <div>
+        <p class="eyebrow">HOSTEL OWNERS</p>
+        <h2>Want to list your hostel?</h2>
+
+        <p>
+          Hostel owners can contact us to have their property
+          listed on GCTU Hostel Finder.
+        </p>
+      </div>
+
+      <a
+        class="owner-btn"
+        href="https://wa.me/233500000000?text=Hello%20GCTU%20Hostel%20Finder%2C%20I%20want%20to%20list%20my%20hostel."
+        target="_blank"
+      >
+        💬 Contact us
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      🏠 <strong>GCTU Hostel Finder</strong>
+    </div>
+
+    <p>
+      Helping GCTU students find convenient accommodation.
+    </p>
+
+    <small>
+      © 2026 GCTU Hostel Finder. Demo project.
+    </small>
+
+  </footer>
+
+
   <script src="app.js"></script>
+
 </body>
 </html>
