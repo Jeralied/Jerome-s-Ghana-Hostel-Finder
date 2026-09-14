@@ -200,7 +200,6 @@ function display(list, target = "hostelList") {
 }
 
 
-/* FILTER */
 
 function filterHostels() {
 
@@ -244,7 +243,6 @@ function filterHostels() {
 }
 
 
-/* CLEAR */
 
 function clearFilters() {
 
@@ -260,7 +258,6 @@ function clearFilters() {
 }
 
 
-/* SAVE / UNSAVE */
 
 function toggleSave(id) {
 
@@ -289,7 +286,6 @@ function toggleSave(id) {
 }
 
 
-/* SAVED COUNT */
 
 function updateSavedCount() {
 
@@ -299,7 +295,6 @@ function updateSavedCount() {
 }
 
 
-/* SHOW SAVED */
 
 function showSaved() {
 
@@ -324,7 +319,6 @@ function showSaved() {
 }
 
 
-/* HIDE SAVED */
 
 function hideSaved() {
 
@@ -343,7 +337,6 @@ function hideSaved() {
 }
 
 
-/* INITIAL LOAD */
 
 display(hostels);
 
