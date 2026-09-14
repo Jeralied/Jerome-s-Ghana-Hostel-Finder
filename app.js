@@ -72,7 +72,6 @@ let savedHostels =
   JSON.parse(localStorage.getItem("gctuSavedHostels")) || [];
 
 
-/* DISPLAY HOSTELS */
 
 function display(list, target = "hostelList") {
 
@@ -130,7 +129,7 @@ function display(list, target = "hostelList") {
             onclick="toggleSave(${hostel.id})"
             title="Save hostel"
           >
-            ${saved ? "❤️" : "🤍"}
+            ${saved ? "good" : "right"}
           </button>
 
         </div>
@@ -141,22 +140,22 @@ function display(list, target = "hostelList") {
           <h3>${hostel.name}</h3>
 
           <p class="location">
-            📍 ${hostel.location}, ${hostel.area}
+             ${hostel.location}, ${hostel.area}
           </p>
 
 
           <div class="details">
 
             <span class="tag">
-              🏠 ${hostel.type}
+               ${hostel.type}
             </span>
 
             <span class="tag">
-              ⭐ ${hostel.rating}
+               ${hostel.rating}
             </span>
 
             <span class="tag">
-              ✓ ${hostel.availability}
+               ${hostel.availability}
             </span>
 
           </div>
@@ -175,7 +174,7 @@ function display(list, target = "hostelList") {
               href="${mapsUrl}"
               target="_blank"
             >
-              📍 Map
+               Map
             </a>
 
             <a
@@ -183,7 +182,7 @@ function display(list, target = "hostelList") {
               href="${whatsappUrl}"
               target="_blank"
             >
-              💬 WhatsApp
+               WhatsApp
             </a>
 
           </div>
