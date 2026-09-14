@@ -1,2 +1,3 @@
-# Jerome-s-Ghana-Hostel-Finder
-A web app to help university students find affordable hostels near GCTU
+# GCTU Hostel Finder - Find Hostels Near GCTU Tesano & Abeka
+
+A web app to help GCTU students find affordable hostels around Tesano, Abeka, Abelemkpe, Achimota.
