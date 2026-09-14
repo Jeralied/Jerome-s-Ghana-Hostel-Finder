@@ -12,7 +12,6 @@ body {
 }
 
 
-/* NAVBAR */
 
 .navbar {
   height: 75px;
@@ -61,7 +60,6 @@ body {
 }
 
 
-/* HERO */
 
 .hero {
   background: linear-gradient(135deg, #102a43, #174a73);
@@ -100,7 +98,6 @@ body {
 }
 
 
-/* SEARCH */
 
 .search-box {
   background: white;
@@ -177,7 +174,6 @@ input:focus {
 }
 
 
-/* MAIN */
 
 main {
   max-width: 1200px;
@@ -203,7 +199,6 @@ main {
 }
 
 
-/* HOSTEL GRID */
 
 .hostel-grid {
   display: grid;
@@ -215,7 +210,6 @@ main {
 }
 
 
-/* CARD */
 
 .card {
   background: white;
@@ -237,7 +231,6 @@ main {
 }
 
 
-/* IMAGE */
 
 .card-image {
   height: 190px;
@@ -285,7 +278,6 @@ main {
 }
 
 
-/* CARD CONTENT */
 
 .card-content {
   padding: 18px;
@@ -371,7 +363,6 @@ main {
 }
 
 
-/* EMPTY STATE */
 
 .empty {
   grid-column: 1 / -1;
@@ -388,7 +379,6 @@ main {
 }
 
 
-/* ADD SECTION */
 
 .add-section {
   margin-top: 70px;
@@ -435,7 +425,6 @@ main {
 }
 
 
-/* SAVED */
 
 .hidden {
   display: none;
@@ -458,7 +447,6 @@ main {
 }
 
 
-/* FOOTER */
 
 footer {
   background: #102a43;
@@ -485,7 +473,6 @@ footer small {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 750px) {
 
